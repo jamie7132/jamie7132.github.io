@@ -1,4 +1,10 @@
 body {
 	background-image:url('lightpaperfibers/lightpaperfibers.png');
 	font-family: 'Ovo', serif;
+    overflow-x:hidden;
+}
+
+.intro {
+	margin-left: auto;
+	margin-right: auto;
 }
