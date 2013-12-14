@@ -10,3 +10,14 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
+.projectIcon {
+	position: relative;	
+	width: 25%;
+	cursor: pointer;
+	float: left;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	border-radius: 3px;
+	color: rgba(0,0,0, .8);
+}
