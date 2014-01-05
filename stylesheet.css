@@ -77,6 +77,6 @@ h4.top {
 }
 
 .copyright {
-	width: 600px;
-	margin-left: -30%;
+	width: 100%;
+	text-align: center;
 }
