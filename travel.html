@@ -20,6 +20,8 @@
       ga('send', 'pageview');
 
     </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="js/maps.js"></script>
   </head>
 
   <body id="travel">
@@ -31,56 +33,72 @@
         
         <span class="links">
           <a href="tech.html">Tech</a>
-          <a href="travel.html" style="color:#ffffff">Travel</a>
+          <a href="travel.html" style="color:#FFFFFF">Travel</a>
           <a href="info.html">Info</a>
         </span>
 
       </div>
 
     	<div class="map">
-    		<img src="img/Map-visited.png" alt="Countries Visited">
+        <div id="regions_div"></div> <!-- map appears here -->
     	</div>
 
-    	<div class="page-body">
+    	<div class="travel-container">
 
-    		<h3>CITIZENSHIP</h3>
-    			<p class="info">United Kingdom<br>
-    				United States of America</p>
+        <div class="column-left">
+      		<h3 style="border-bottom: solid #5C201F">CITIZENSHIP</h3>
+      			<p class="info">
+              United Kingdom<br>
+      				United States of America
+              <br><br><br>
+            </p>
 
-    		<h3>LANGUAGES</h3>
-    			<p class="info">English. Fran&ccedilais.</p>
+      		<h3 style="border-bottom: solid #FFFFFF">LANGUAGES</h3>
+      			<p class="info">
+              English. Fran&ccedilais.
+            </p>
+        </div>
 
-    		<h3>WORKED</h3>
-          		<p class="info">Houston, TX, USA<br>
-          			Ann Arbor, MI, USA<br>
-          			Paris, France<br>
-                Cupertino, CA, USA</p>
+        <div class="column-centre">
+      		<h3 style="border-bottom: solid #19734C">WORKED</h3>
+        		<p class="info">Houston, TX, USA<br>
+        			Ann Arbor, MI, USA<br>
+        			Paris, France<br>
+              Cupertino, CA, USA
+            </p>
 
-    		<h3>LIVED</h3>
-          		<p class="info">Singapore, Singapore<br>
-          			Spring, TX, USA<br>
-          			Ann Arbor, MI, USA<br>
-          			Paris, France<br>
-                Cupertino, CA, USA</p>
+      		<h3 style="border-bottom: solid #19734C">LIVED</h3>
+        		<p class="info">Singapore, Singapore<br>
+        			Spring, TX, USA<br>
+        			Ann Arbor, MI, USA<br>
+        			Paris, France<br>
+              Cupertino, CA, USA
+            </p>
+        </div>
 
-    		<h3>VISITED</h3>
-    			<h4 class="top">NORTH AMERICA</h4>
-    	      		<p class="info">USA. Canada.</p>
+        <div class="column-right">
+      		<h3 style="border-bottom: solid #3366CC">VISITED</h3>
+      			<h4 class="top">NORTH AMERICA</h4>
+  	      		<p class="info">
+                USA. Canada.
+              </p>
 
-    			<h4>EUROPE</h4>
-    	      		<p class="info">England.<br>
-    	      			France. Monaco.<br>
-    	      			Belgium. Netherlands. Luxembourg.<br>
-    	      			Germany. Austria. Switzerland.<br>
-    	      			Italy. Vatican City.<br></p>
+      			<h4>EUROPE</h4>
+  	      		<p class="info">
+                England.<br>
+  	      			France. Monaco.<br>
+  	      			Belgium. Netherlands. Luxembourg.<br>
+  	      			Germany. Austria. Switzerland.<br>
+  	      			Italy. Vatican City.<br>
+              </p>
 
     	  		<h4>ASIA</h4>
-    	      		<p class="info">Singapore. Thailand. Philippines.</p>
+  	      		<p class="info">
+                Singapore. Thailand. Philippines.
+              </p>
+        </div>
 
     	</div>
-
     </div>
-
   </body>
-
 </html>
