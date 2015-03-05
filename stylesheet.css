@@ -33,6 +33,29 @@ html, body {
 	text-align: center;
 }
 
+.travel-container {
+	margin: auto;
+	margin-top: 15px;
+	color: #ffffff;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	text-align: center;
+}
+
+.column-left{
+	float: left; 
+	width: 33%; 
+}
+
+.column-right{
+	float: right; 
+	width: 33%; 
+}
+
+.column-centre{
+	display: inline-block; 
+	width: 33%; 
+}
+
 .info {
 	margin-top: -15px;
 	margin-bottom: 10px;
