@@ -28,6 +28,22 @@ html, body {
 	text-align: center;
 }
 
+.orgs-container {
+	margin: auto;
+	margin-top: 15px;
+	position: relative;
+	color: #ffffff;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	text-align: center;
+}
+
+.hacks-container {
+	position: relative;
+	color: #ffffff;
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	text-align: center;
+}
+
 .map {
 	margin-top: 15px;
 	text-align: center;
