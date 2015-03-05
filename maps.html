@@ -1,54 +1,53 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <style type="text/css">
-      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
-    </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAZOMoZUAVbswOTBs_UO1dVwsF00oNDbSQ">
-    </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: { lat: -34.397, lng: 150.644},
-          zoom: 8
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body>
-<div id="map-canvas"></div>
-  </body>
-</html> -->
-
+<!DOCTYPE html>
 <html>
   <head>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["geochart"]});
-      google.setOnLoadCallback(drawRegionsMap);
-      function drawRegionsMap() {
+      google.setOnLoadCallback(drawWorldMap);
+
+      function drawWorldMap() {
+
         var data = google.visualization.arrayToDataTable([
-          ['Country',   'Latitude'],
-          ['Texas', 1], ['England', 1],
+          ['Country', 'Relation'], // 0.5 citizen, 1 lived, 2 visited
+          ['US', 0.5],
+          ['GB',0.5],
+          ['FR',1],
+          ['SG',1],
+          ['CA',2],
+          ['MC',2],
+          ['BE',2],
+          ['NL',2],
+          ['LU',2],
+          ['DE',2],
+          ['AT',2],
+          ['CH',2],
+          ['IT',2],
+          ['VA',2],
+          ['TH',2],
+          ['PH',2]
         ]);
-  
+
         var options = {
-          region: '002', // Africa
-          colorAxis: {colors: ['#d3d3d3', 'black', '#25383C']},
-          backgroundColor: '#000000',
-          datalessRegionColor: '#f8bbd0'
+          legend: 'none', 
+          backgroundColor: '#202024', 
+          datalessRegionColor: '#c1c1c1', 
+          displayMode: 'regions', 
+          colorAxis: {
+            minValue: 0, maxValue: 2, 
+            colors: ['red','#7A0029', 'green', '#336699', 'blue', '#3366CC'],
+          },
+          tooltip: {
+            trigger: 'none'
+          }
         };
 
-        var chart = new google.visualization.GeoChart(document.getElementById('geochart-colors'));
-        chart.draw(data, options);
-      };
+        var geochart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        geochart.draw(data, options);
+      }
     </script>
   </head>
   <body>
-    <div id="geochart-colors" style="width: 700px; height: 433px;"></div>
+    <div id="regions_div" height="100%"></div>
   </body>
 </html>
