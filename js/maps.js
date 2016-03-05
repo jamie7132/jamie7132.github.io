@@ -10,6 +10,7 @@ function drawWorldMap() {
     ['FR',1],
     ['SG',1],
     ['CA',2],
+    ['MX',2],
     ['MC',2],
     ['BE',2],
     ['NL',2],
