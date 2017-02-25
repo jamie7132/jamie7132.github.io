@@ -21,7 +21,15 @@ function drawWorldMap() {
     ['IT',2],
     ['VA',2],
     ['TH',2],
-    ['PH',2]
+    ['PH',2],
+    ['IE',2],
+    ['ES',2],
+    ['PL',2],
+    ['CZ',2],
+    ['HU',2],
+    ['SK',2],
+    ['KH',2],
+    ['VN',2]
   ]);
 
   var options = {
